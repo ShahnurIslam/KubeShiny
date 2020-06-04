@@ -15,13 +15,13 @@
 ## Add meta data about your application
 golem::fill_desc(
   pkg_name = "KubeShiny", # The Name of the package containing the App 
-  pkg_title = "PKG_TITLE", # The Title of the package containing the App 
+  pkg_title = "Kubernetes Shiny Tests", # The Title of the package containing the App 
   pkg_description = "PKG_DESC.", # The Description of the package containing the App 
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
-  author_email = "AUTHOR@MAIL.COM", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional) 
-)     
+  author_first_name = "Shan", # Your First Name
+  author_last_name = "Islam", # Your Last Name
+  author_email = "shahnurislam@hotmail.co.uk", # Your Email
+  repo_url = "https://github.com/ShahnurIslam/KubeShiny.git" # The URL of the GitHub Repo (optional) 
+)
 
 ## Set {golem} options ----
 golem::set_golem_options()
