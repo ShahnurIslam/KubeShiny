@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubeshiny
+  labels:
+    app: kubeshiny
+spec:
+  selector:
+    matchLabels:
+      app: shiny
+  template:
+    metadata:
+      labels:
+        app: shiny
+    spec:
+      containers:
+        - name: kubeshiny
+          image: kubeshiny:0.0.1
+          ports: 
+            - containerPort: 8080
+              hostPort: 8080
