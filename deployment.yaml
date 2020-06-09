@@ -7,15 +7,14 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: shiny
+      app: kubeshiny
   template:
     metadata:
       labels:
-        app: shiny
+        app: kubeshiny
     spec:
       containers:
         - name: kubeshiny
-          image: kubeshiny:0.0.1
+          image: gcr.io/kubernetes-play-256912/kubeshiny:0.0.1
           ports: 
             - containerPort: 8080
-              hostPort: 8080

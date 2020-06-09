@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubeshiny
+  labels:
+    app: kubeshiny
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+    - protocol: TCP
+      port: 8080     # 
+      targetPort: 8080 # Port on the pod for any app which has the label kubeshiny
+  selector:
+    app: kubeshiny
+  type: "LoadBalancer"
